@@ -1,7 +1,7 @@
-"  Move viminfo from ${HOME}.viminfo to .vim
+" Move viminfo from ${HOME}.viminfo to .vim
 set viminfo+=n~/.vim/viminfo
 
-"Shift tabs
+" Shift tabs
 nnoremap <S-Tab> <<
 inoremap <S-tab> <C-d>
 nnoremap <Tab> >>
@@ -42,8 +42,9 @@ func! GetSelectedText()
 endfunc
 
 if system("uname -a | grep Microsoft | wc -l")
-    " :echom "CONFIG WINDOWS CLIPBOARD"
     noremap <C-C> :call system('clip.exe', GetSelectedText())<CR>
     noremap <C-X> :call system('clip.exe', GetSelectedText())<CR>gvx
 endif
 
+" Vim syntax plugin submodule
+let g:python_highlight_all = 1
