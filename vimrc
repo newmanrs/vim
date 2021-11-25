@@ -43,7 +43,7 @@ func! GetSelectedText()
     return result
 endfunc
 
-if system("uname -a | grep Microsoft | wc -l")
+if system("uname -a | grep -i Microsoft | wc -l")
     noremap <C-C> :call system('clip.exe', GetSelectedText())<CR>
     noremap <C-X> :call system('clip.exe', GetSelectedText())<CR>gvx
 endif
