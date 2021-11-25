@@ -4,9 +4,12 @@
 [submodule "pack/plugins/start/python-syntax"]
 	path = pack/plugins/start/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
-[submodule "/root/.vim/pack/plugins/start/vim-go"]
-	path = /root/.vim/pack/plugins/start/vim-go
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "YouCompleteMe"]
 	path = YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "pack/plugins/start/rust.vim"]
+	path = pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim

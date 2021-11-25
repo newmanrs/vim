@@ -7,6 +7,8 @@ inoremap <S-tab> <C-d>
 nnoremap <Tab> >>
 
 syntax on
+filetype plugin indent on
+
 colorscheme torte
 
 "Standard QoL
