@@ -7,3 +7,6 @@
 [submodule "/root/.vim/pack/plugins/start/vim-go"]
 	path = /root/.vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "YouCompleteMe"]
+	path = YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
