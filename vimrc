@@ -29,6 +29,15 @@ set smartindent
 set incsearch
 set history=5000
 
+" F5 Write and execute current file in python interpreter
+autocmd FileType python map <buffer> <F5> :w<CR>
+    \ :exec '!clear; time python3' shellescape(@%, 1)<CR>
+
+autocmd FileType python imap <buffer> <F5> <esc> :w<CR>
+    \ :exec '!clear; time python3' shellescape(@%, 1)<CR>
+
+
+
 
 " Makefiles require tabs
 autocmd FileType make set noexpandtab
@@ -45,7 +54,7 @@ endfunc
 
 if system("uname -a | grep -i Microsoft | wc -l")
     noremap <C-C> :call system('clip.exe', GetSelectedText())<CR>
-    noremap <C-X> :call system('clip.exe', GetSelectedText())<CR>gvx
+    " noremap <C-X> :call system('clip.exe', GetSelectedText())<CR>gvx
 endif
 
 " Vim syntax plugin submodule
