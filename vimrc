@@ -36,6 +36,12 @@ autocmd FileType python map <buffer> <F5> :w<CR>
 autocmd FileType python imap <buffer> <F5> <esc> :w<CR>
     \ :exec '!clear; time python3' shellescape(@%, 1)<CR>
 
+" F7 - hopefully doesn't conflict with vsstudio
+autocmd FileType python map <buffer> <F7> :w<CR>
+    \ :exec '!clear; time python3' shellescape(@%, 1)<CR>
+
+autocmd FileType python imap <buffer> <F7> <esc> :w<CR>
+    \ :exec '!clear; time python3' shellescape(@%, 1)<CR>
 
 
 
